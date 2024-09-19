@@ -33,7 +33,7 @@ aside {
     width: 220px;
     height: 100vh;
     position: fixed;
-    left: -240px; /* El menú comienza escondido a la izquierda */
+    left: -240px; /* Menú escondido por defecto */
     top: 0;
     transition: left 0.3s ease;
     z-index: 1000;
@@ -62,7 +62,7 @@ aside nav ul li a:hover {
 }
 
 main {
-    margin-left: 20px; /* El contenido principal se queda sin margen cuando el menú está escondido */
+    margin-left: 20px; /* Contenido principal sin margen cuando el menú está escondido */
     padding: 20px;
     transition: margin-left 0.3s ease;
 }
