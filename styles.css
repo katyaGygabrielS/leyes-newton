@@ -30,10 +30,10 @@ h1 {
 
 aside {
     background-color: #55679C;
-    width: 200px;
+    width: 220px;
     height: 100vh;
     position: fixed;
-    left: -220px;
+    left: -240px;
     top: 0;
     transition: left 0.3s;
 }
@@ -70,6 +70,6 @@ img {
     margin-top: 10px;
 }
 
-h2 {
+h2, h3 {
     color: #55679C;
 }
