@@ -33,14 +33,16 @@ aside {
     width: 220px;
     height: 100vh;
     position: fixed;
-    left: -240px;
+    left: 0; /* Colocar el menú a la izquierda */
     top: 0;
     transition: left 0.3s;
+    z-index: 1000;
 }
 
 aside nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 aside nav ul li {
@@ -60,8 +62,9 @@ aside nav ul li a:hover {
 }
 
 main {
-    margin-left: 20px;
+    margin-left: 240px; /* Desplazar el contenido principal a la derecha cuando el menú está visible */
     padding: 20px;
+    transition: margin-left 0.3s;
 }
 
 img {
