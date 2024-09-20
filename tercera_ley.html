@@ -3,42 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tercera Ley de Newton</title>
+    <title>Tercera Ley de la Termodinámica</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <button id="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
-        <h1>Tercera Ley de Newton</h1>
+        <div class="menu-container">
+            <button id="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+            <nav id="menu" class="hidden">
+                <ul>
+                    <li><a href="index.html">Historia de la Termodinámica</a></li>
+                    <li><a href="primera_ley.html">Primera Ley</a></li>
+                    <li><a href="segunda_ley.html">Segunda Ley</a></li>
+                    <li><a href="tercera_ley.html">Tercera Ley</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <h1>Termodinámica</h1>
+        </div>
     </header>
-
-    <aside id="menu">
-        <nav>
-            <ul>
-                <li><a href="index.html">Historia</a></li>
-                <li><a href="primera_ley.html">Primera Ley</a></li>
-                <li><a href="segunda_ley.html">Segunda Ley</a></li>
-                <li><a href="tercera_ley.html">Tercera Ley</a></li>
-            </ul>
-        </nav>
-    </aside>
 
     <main>
         <section>
-            <h2>Tercera Ley de Newton: Acción y Reacción</h2>
+            <h2>Tercera Ley de la Termodinámica</h2>
+            <img src="images/third_law.jpg" alt="Tercera Ley de la Termodinámica" class="image">
             <p>
-                La Tercera Ley de Newton establece que por cada acción, hay una reacción igual y opuesta. Esto significa que si un objeto A ejerce una fuerza sobre un objeto B, el objeto B ejercerá una fuerza de igual magnitud pero en dirección opuesta sobre el objeto A.
+                La **Tercera Ley de la Termodinámica** establece que a medida que la temperatura de un sistema se aproxima al <strong>cero absoluto</strong> (0 Kelvin, o -273.15°C), la entropía de dicho sistema tiende a un valor constante mínimo. En términos simples, a temperaturas extremadamente bajas, los sistemas tienen muy poca energía térmica, y el desorden o la aleatoriedad dentro del sistema se reduce al mínimo.
             </p>
             <p>
-                Esta ley es crucial para entender cómo los objetos interactúan entre sí. No solo es evidente en situaciones cotidianas, como cuando empujas una pared y sientes una fuerza hacia atrás, sino también en fenómenos más complejos como el vuelo de cohetes y aviones.
+                La Tercera Ley es importante en la física del estado sólido y la química, especialmente en el estudio de los cristales. A temperaturas cercanas al cero absoluto, las moléculas en un cristal perfectamente ordenado se encuentran en sus posiciones más bajas de energía, lo que lleva a una entropía cercana a cero.
             </p>
-            <h3>Ejemplos:</h3>
+            <h3>Aplicaciones de la Tercera Ley</h3>
+            <p>
+                La Tercera Ley tiene importantes implicaciones en la criogenia y en la comprensión de los fenómenos cuánticos a bajas temperaturas. Algunas aplicaciones incluyen:
+            </p>
             <ul>
-                <li><strong>Empujar una puerta:</strong> Cuando empujas una puerta, esta ejerce una fuerza opuesta hacia ti.</li>
-                <li><strong>Despegue de un cohete:</strong> Los gases expulsados hacia abajo generan una fuerza hacia arriba, haciendo que el cohete se eleve.</li>
+                <li>La superconducción, un fenómeno donde algunos materiales conducen electricidad sin resistencia cuando se enfrían cerca del cero absoluto.</li>
+                <li>La superfluidez, un estado en el que los líquidos pueden fluir sin fricción a temperaturas muy bajas.</li>
+                <li>La refrigeración criogénica, utilizada para alcanzar temperaturas extremadamente bajas, es fundamental en la investigación de partículas subatómicas y en la física de bajas temperaturas.</li>
             </ul>
-            <img src="https://cloud.educaplay.com/recursos/229/7334650/imagen_1_1603306104.jpg" alt="Tercera Ley de Newton" style="max-width: 400px; height: auto;">
+            <p>
+                Aunque es imposible alcanzar el cero absoluto en la práctica, la Tercera Ley establece límites sobre lo que podemos esperar cuando nos acercamos a esas condiciones.
+            </p>
         </section>
     </main>
 </body>
