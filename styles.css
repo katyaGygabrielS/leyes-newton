@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,72 +7,72 @@ body {
 }
 
 header {
+    background-color: #55679C;
+    color: white;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #B22222;
-    padding: 10px;
 }
 
-.menu-container {
-    position: relative;
+h1 {
+    margin: 0;
 }
 
 #menu-toggle {
-    background-color: #B22222;
-    color: white;
+    background: #ffffff;
     border: none;
+    color: #55679C;
     padding: 10px;
     font-size: 18px;
     cursor: pointer;
 }
 
-#menu ul {
+aside {
+    background-color: #55679C;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    left: -240px; /* Menú escondido por defecto */
+    top: 0;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+aside nav ul {
     list-style-type: none;
-    background-color: #B22222;
     padding: 0;
-    margin-top: 10px;
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
+    margin: 0;
 }
 
-#menu ul li {
-    padding: 10px;
+aside nav ul li {
+    padding: 20px;
+    text-align: center;
 }
 
-#menu ul li a {
+aside nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-#menu ul li:hover {
-    background-color: #8B0000;
-}
-
-.title h1 {
-    margin-right: 20px;
-    font-size: 24px;
+aside nav ul li a:hover {
+    background-color: #3d4d7c;
+    display: block;
 }
 
 main {
+    margin-left: 20px; /* Contenido principal sin margen cuando el menú está escondido */
     padding: 20px;
+    transition: margin-left 0.3s ease;
 }
 
-h2 {
-    color: #B22222;
-    margin-bottom: 10px;
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
 }
 
-p {
-    margin-bottom: 15px;
+h2, h3 {
+    color: #55679C;
 }
-
-.image {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 20px 0;
-}
-
